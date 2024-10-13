@@ -1,0 +1,68 @@
+.card {
+    width: 265px;
+    height: 320px;
+    padding: 38px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.09);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--color-ternary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover{
+    transform: scale(1.15); /* Slightly scales down the card */
+    box-shadow: 0px 10px 20px rgba(171, 171, 171, 0.15);
+  }
+  
+  .circle {
+    width: 96px;
+    height: 96px;
+    background:linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--color-ternary)); /* Violet color */
+    border-radius: 50%;
+    position: absolute;
+    right: -20px;
+    top: -28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s, left 0.3s;
+  }
+  
+  .circle-number {
+    position: absolute;
+    bottom: 24px;
+    left: 28px;
+    color: #ccc;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .icon {
+    width: 48px;
+    fill: var(--color-ternary); /* Violet color for the SVG icon */
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    width: max-content;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #71717a; /* A gray color */
+    line-height: 1.5;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+
+  .ServicesCard:dir(rtl) .circle{
+    right: auto;
+    left: -20px;
+    top: -28px;
+  }
+
+  

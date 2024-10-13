@@ -1,0 +1,21 @@
+.services{
+    margin-top: 100px;
+}
+.services_container{
+    width: 60%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.services_title{
+    font-family: var(--italic_font);
+    font-size:54px;
+    color: var(--color-ternary);
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
+    text-align: center;
+}

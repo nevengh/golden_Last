@@ -4,7 +4,7 @@ import { useLanguage } from "../../LanguageContext";
 import en from "../../locales/en";
 import ar from '../../locales/ar';
 import { motion } from 'framer-motion';
-import behind1 from '../../assets/BehineTheSeen/FIN 3.mp4';
+// import behind1 from '../../assets/BehineTheSeen/FIN 3.mp4';
 // import educate1 from '../../assets/educational/Salmon DNA Edit 01.mp4';
 // import educate2 from '../../assets/educational/Dietitian Advice 01.mp4';
 // import userG1 from '../../assets/UserGenerated/b1 reel.mp4';
@@ -23,7 +23,7 @@ const MediaSection: React.FC = () => {
     }
 
     const videoCategories: VideoCategories = {
-        behindTheScene: [behind1],
+        behindTheScene: [],
         userGenerated: [],
         corporateVideos: [],
         marketingVideos: [],

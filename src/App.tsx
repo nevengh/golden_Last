@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from "./components/Header/Header";
+import "./App.css";
+import { LanguageProvider } from "./LanguageContext";
+import Hero from "./components/Hero/Hero";
+import AboutUS from "./pages/AboutUS/AboutUS";
+import OuServices from "./pages/OuServices/OuServices";
+import MediaSection from "./pages/MediaSection/MediaSection";
+import Footer from "./components/Footer/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="app">
+      <LanguageProvider>
+        <Header />
+        <div id="home">
+          <Hero/>
+        </div>
+        <div id="about">
+          <AboutUS/>
+        </div>
+        <div id="services">
+          <OuServices/>
+        </div>
+        <div id="Media">
+          <MediaSection/>
+        </div>
+        <Footer/>
+      </LanguageProvider>
+    </div>
+  );
+};
 
-export default App
+export default App;
